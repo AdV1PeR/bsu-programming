@@ -1,0 +1,23 @@
+=== COMPUTER HARDWARE INVENTORY ===
+Type      | Year | Specifications
+----------------------------------
+HDD | 2020 | 1072GB | Hitachi
+SSD  | 2023 | 2.75TBW | 7.92029% used
+Monitor | 2021 | 27.2" | 2560x1440 | 215Hz
+CPU | 2021 | Intel Core i5 | 6 cores | 3.96GHz
+HDD | 2023 | 8235GB | Western Digital
+SSD  | 2023 | 3.25TBW | 81.29% used
+Monitor | 2020 | 24.6" | 2560x1440 | 99Hz
+CPU | 2018 | AMD Ryzen 5 | 6 cores | 4.56GHz
+HDD | 2017 | 9528GB | Toshiba
+SSD  | 2023 | 0.75TBW | 14.41% used
+Monitor | 2022 | 21.9" | 1920x1080 | 108Hz
+CPU | 2021 | Intel Core i7 | 8 cores | 4.80GHz
+HDD | 2022 | 4349GB | Seagate
+SSD  | 2023 | 0.75TBW | 65.64% used
+Monitor | 2023 | 23.7" | 1920x1080 | 115Hz
+CPU | 2020 | Intel Core i5 | 6 cores | 4.63GHz
+HDD | 2017 | 3668GB | Western Digital
+SSD  | 2022 | 0.50TBW | 8.97% used
+Monitor | 2022 | 33.5" | 3840x2160 | 208Hz
+CPU | 2020 | AMD Ryzen 5 | 6 cores | 4.80GHz

@@ -1,0 +1,22 @@
+====== Inventory Report ======
+
+---------- Computer ----------
+HDD	2022	1939GB	Toshiba
+SSD	2020	7000GB TBW	167% used
+Monitor	2021	30.6483"	3840x2160	178Hz
+CPU	2018	i3-10100	3 cores	3.4185GHz
+-----------------------------
+
+---------- Computer ----------
+HDD	2019	3632GB	Toshiba
+SSD	2019	5000GB TBW	269% used
+Monitor	2021	30.7602"	3840x2160	150Hz
+CPU	2019	Ryzen 3 3100	5 cores	3.40221GHz
+-----------------------------
+
+---------- Computer ----------
+HDD	2016	1629GB	WD
+SSD	2021	1000GB TBW	195% used
+Monitor	2021	24.1701"	2560x1440	88Hz
+CPU	2018	i7-12700	8 cores	4.99634GHz
+-----------------------------

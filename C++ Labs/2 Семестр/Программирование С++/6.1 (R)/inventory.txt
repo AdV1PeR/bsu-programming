@@ -1,0 +1,23 @@
+=== Device Inventory ===
+Type: HDD
+Year: 2020
+Capacity: 2000 GB
+Manufacturer: Western Digital
+--------------------
+Type: SSD
+Year: 2022
+TBW: 1000000000000 bytes
+Written bytes: 250000000 bytes (0.0% of TBW)
+--------------------
+Type: Monitor
+Year: 2023
+Diagonal: 27.0 inches
+Resolution: 1920×1080
+Refresh rate: 144 Hz
+--------------------
+Type: Processor
+Year: 2023
+Model: AMD Ryzen 9 7950X
+Cores: 16
+Frequency: 4.50 GHz
+--------------------

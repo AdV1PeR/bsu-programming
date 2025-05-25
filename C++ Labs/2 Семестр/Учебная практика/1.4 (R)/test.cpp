@@ -1,0 +1,130 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using std::cin; using std::cout;
+using std::endl; using std::swap;
+
+template <typename T>
+void fillUp(T* arr, int size) {
+    for (int i = 0; i < size; ++i) {
+        arr[i] = static_cast<T>(i + 1);
+    }
+}
+
+template <typename T>
+void fillDown(T* arr, int size) {
+    for (int i = 0; i < size; ++i) {
+        arr[i] = static_cast<T>(size - i);
+    }
+}
+
+template <typename T>
+void fillRandom(T* arr, int size) {
+    srand(static_cast<unsigned int>(time(0)));
+    for (int i = 0; i < size; ++i) {
+        arr[i] = static_cast<T>(rand() % 100);
+    }
+}
+
+template <typename T>
+void chooseFillingMethod(T* arr, int size) {
+    int choice;
+    cout << "Выберите способ заполнения массива:\n1. По возрастанию\n2. По убыванию\n3. Случайно\n";
+    cin >> choice;
+
+    switch (choice) {
+        case 1: fillUp(arr, size); break;
+        case 2: fillDown(arr, size); break;
+        case 3: fillRandom(arr, size); break;
+        default: cout << "Неверный выбор!\n"; break;
+    }
+}
+
+template <typename T>
+void printArray(const T* arr, int size) {
+    for (int i = 0; i < size; ++i) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
+template <typename T>
+void bubbleSort(T* arr, int size, int& comparisons, int& movements) {
+    for (int i = 0; i < size - 1; ++i) {
+        for (int j = 0; j < size - i - 1; ++j) {
+            comparisons++;
+            if (arr[j] > arr[j + 1]) {
+                swap(arr[j], arr[j + 1]);
+                movements++;
+            }
+        }
+    }
+}
+
+template <typename T>
+void insertionSort(T* arr, int size, int& comparisons, int& movements) {
+    for (int i = 1; i < size; ++i) {
+        T key = arr[i];
+        int j = i - 1;
+        comparisons++;
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j--;
+            movements++;
+            comparisons++;
+        }
+        arr[j + 1] = key;
+        movements++;
+    }
+}
+
+template <typename T>
+void chooseSortingMethod(T* arr, int size) {
+    int choice;
+    cout << "Выберите метод сортировки:\n1. Пузырьковая сортировка\n2. Сортировка вставками\n";
+    cin >> choice;
+
+    int comparisons = 0;
+    int movements = 0;
+
+    switch (choice) {
+        case 1: bubbleSort(arr, size, comparisons, movements); break;
+        case 2: insertionSort(arr, size, comparisons, movements); break;
+        default: cout << "Неверный выбор! Сортировка не выполнена.\n"; return;
+    }
+
+    printArray(arr, size);
+    cout << "Сравнения: " << comparisons << ", Перемещения: " << movements << endl;
+}
+
+template <typename T>
+void processArray(int size) {
+    T* arr = new T[size];
+    chooseFillingMethod(arr, size);
+    cout << "Заполненный массив: ";
+    printArray(arr, size);
+    chooseSortingMethod(arr, size);
+    delete[] arr;
+}
+
+int main() {
+    int size;
+    cout << "Введите размер массива: ";
+    cin >> size;
+
+    int typeChoice;
+    cout << "Выберите тип данных:\n1. int\n2. float\n3. double\n4. char\n";
+    cin >> typeChoice;
+
+    switch (typeChoice) {
+        case 1: processArray<int>(size); break;
+        case 2: processArray<float>(size); break;
+        case 3: processArray<double>(size); break;
+        case 4: processArray<char>(size); break;
+        default: cout << "Неверный выбор типа даУнных!" << endl;
+        break;
+    }
+
+    return 0;
+}

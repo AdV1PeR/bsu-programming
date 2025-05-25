@@ -1,0 +1,5 @@
+John Ivanovich Smith,25,3,M,4.7
+Victoria Sergeyevna Lebedeva,23,3,F,3.4
+Ksenia Alexandrovna Morozova,24,2,F,3.6
+Vasily Romanovich Semenov,24,2,M,8.1
+Nikolai Sidorovich Kuznetsov,23,3,M,6.5
